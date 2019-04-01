@@ -28,7 +28,8 @@ public class CalculatorTest {
 	public void afterEachTest() {
 		System.out.println("This is exceuted after each Test");
 	}
-
+	
+	
 	@Test
 	public void testSum() {
 		int result = calculator.sum(3, 4);
@@ -36,7 +37,7 @@ public class CalculatorTest {
 		assertEquals(9, result);
 	}
 
-	@Test
+	/*@Test
 	public void testDivison() {
 		try {
 			int result = calculator.divison(10, 2);
@@ -50,7 +51,7 @@ public class CalculatorTest {
 	@Test(expected = Exception.class)
 	public void testDivisionException() throws Exception {
 		calculator.divison(10, 0);
-	}
+	}*/
 
 	@Ignore
 	@Test
@@ -67,3 +68,5 @@ public class CalculatorTest {
 		assertTrue(result == 9);
 	}
 }
+
+
