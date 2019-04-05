@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 
 
 public class CalculatorTest {
@@ -31,6 +32,7 @@ public class CalculatorTest {
 	
 	
 	@Test
+	@DisplayName("Test if true holds")
 	public void testSum() {
 		int result = calculator.sum(3, 4);
 
